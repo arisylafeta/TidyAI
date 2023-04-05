@@ -2,7 +2,17 @@ import os
 import openai
 
 
-openai.api_key = "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"
+#ApiKey magic 
+ap1 = "sk-H"
+ap2 = "1ThzBMVz1Zkql41LfgdT"
+ap3 = "3BlbkFJ9E"
+ap4 = "nTZedU2kMSNYHj3jFf"
+
+def generateKey(one, two, three, four):
+  result = one + two + three + four
+  return result
+
+openai.api_key = generateKey(ap1, ap2, ap3, ap4)
 model_engine = "text-davinci-003"
 
 

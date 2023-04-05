@@ -5,6 +5,8 @@ from streamlit_option_menu import option_menu
 from API import generateBio, writeShorter
 
 
+
+
 #Navbar assignment
 selected = option_menu(
   menu_title=None,
