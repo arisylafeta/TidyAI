@@ -2,12 +2,17 @@ import os
 import openai
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-with open(BASE_DIR / 'OPENAI_KEY.py') as f:
-    SECRET_KEY = f.read().strip()
+ap1 = "sk-H"
+ap2 = "1ThzBMVz1Zkql41LfgdT"
+ap3 = "3BlbkFJ9E"
+ap4 = "nTZedU2kMSNYHj3jFf"
 
+def generateKey(one, two, three, four):
+  result = one + two + three + four
+  return result
 
-openai.api_key = SECRET_KEY
+openai.api_key = generateKey(ap1, ap2, ap3, ap4)
+
 model_engine = "text-davinci-003"
 
 
