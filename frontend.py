@@ -133,7 +133,7 @@ if selected =="Cover Letter":
           st.write('')
           st.write('')
           st.write('')
-          st.image('https://i.imgur.com/tKBSrKn.png')
+          st.image('https://i.imgur.com/tKBSrKn.png', width=200)
           st.subheader("🎈Yuhuu we made it. Here's your Cover Letter🎈")
           st.markdown(response)
 
